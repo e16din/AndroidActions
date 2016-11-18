@@ -1,6 +1,14 @@
 # AndroidActions
 AndroidActions - плагин для автоматизации рутинных действий при разработке android-приложений.
 
+## Как установить:
+
+0. Скачайте [архив с плагином](https://github.com/e16din/AndroidActions/blob/master/AndroidActions.jar).
+1. Откройте меню Android Studio > Preferences.
+2. Выберите раздел Plugins и нажмите кнопку "Install plugin from disk".
+3. Перейдите к папке, в которую скачали плагин и дважды щелкните по нему.
+4. Перезагрузите IDE кнопкой Restart Android Studio.
+
 ## Action: Generate Views from Layout:
 
 1. Откройте необходимый layout
