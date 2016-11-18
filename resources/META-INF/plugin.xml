@@ -1,0 +1,42 @@
+<idea-plugin version="2">
+    <id>com.e16din.android.actions</id>
+    <name>AndroidActions</name>
+    <version>0.1.0</version>
+    <vendor email="bigusov@gmail.com" url="https://github.com/e16din">e16din</vendor>
+
+    <description><![CDATA[
+     To generate views from layout to clipboard:
+
+        1. Open layout xml file
+        2. Press [SHIFT + CMD(CTRL) + A]
+        3. Enter "Generate Views from Layout"
+
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <!--Add change notes here.<br>-->
+      <!--<em>most HTML tags may be used</em>-->
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+
+    <depends>com.intellij.modules.androidstudio</depends><!--to release-->
+    <!--<depends>com.intellij.modules.all</depends> &lt;!&ndash;to debug&ndash;&gt;-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="AndroidActions.viewsFromLayout" class="com.e16din.android.actions.ViewsFromLayoutAction"
+                text="Generate Views from Layout. (AndroidActions)">
+            <!--<add-to-group group-id="GenerateGroup" anchor="last" />-->
+        </action>
+    </actions>
+
+</idea-plugin>
